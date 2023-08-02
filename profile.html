@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!--BEGINNING OF NAVBAR-->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img  src="images/linkedin logo.webp" alt=""></a>
+
+            <div class="search-box">
+                <img src="images/search-alt-regular-24.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/home-solid-24 (1).png" alt=""><span>Home</span></a></li>
+                <li><a href="index.html"><img src="images/network-chart-regular-24 (2).png" alt=""><span>My Network</span></a></li>
+                <li><a href="index.html"><img src="images/briefcase-solid-24 (1).png" alt=""><span>Jobs</span></a></li>
+                <li><a href="index.html"><img src="images/chat-solid-24 (2).png" alt=""><span>Messaging</span></a></li>
+                <li><a href="index.html"><img src="images/bell-solid-24 (1).png" alt=""><span>Notifications</span></a></li>
+                
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/istockphoto-1180590214-612x612.jpg" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>  
+        </div>
+
+<!-------PROFILE DROP DOWN MENU------->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/single1.jpg" alt="">
+                    <div>
+                        <h3>Alton Obinna</h3>
+                        <a href="profile.html">View Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/transfer-alt-regular-24 (1).png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/cog-solid-24.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/support-regular-24.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/stack-overflow-logo-24.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/log-out-circle-regular-24.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!--------------------------BODY-------------------------->
+
+  <div class="container">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img src="images/single1.jpg" alt="" width="100%" height="390px">
+            <div class="profile-container-inner">
+                <img src="images/single1.jpg" class="profile-pic">
+                <h1>Alton Obinna</h1>
+                <b>Software Developer at Techfirm</b>
+                <p>Michigan, United States &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/single.jfif" alt="">
+                    <span>1 mutual connection: John Terry</span>
+                </div>
+                <div class="profile-btn">
+                    <a class="primary-btn" href="#"><img src="images/transfer-alt-regular-24 (1).png">Connect</a>
+                    <a href="#"><img src="images/chat-solid-24 (2).png">Message</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-description">
+            <h2>About</h2>
+            <p>Looking forwardto having a websitecreatedfor you? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Nesciunt adipisci harum sit quae necessitatibus beatae dicta porro veniam optio vel, error
+                distinctio dolore maxime molestiae eaque velit quidem enim! Ratione?</p>
+            <a href="#" class="see-more-link">See more...</a>
+        </div>
+
+
+        <div class="profile-description">
+            <h2>Experience</h2>
+            <div class="profile-desc-row">
+                <img src="images/microsoft-window-logo-emblem-0.png" alt="">
+                <div>
+                    <h3>SoftWare Developer</h3>
+                    <b>Microsoft &middot; Full-time</b>
+                    <b>Feb 2020 - Present &middot; 3 years</b>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odio dolores possimus maiores
+                         incidunt expedita ipsam magni quae sapiente ducimus?</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="images/Tesla_logo.png" alt="">
+                <div>
+                    <h3>SoftWare Intern</h3>
+                    <b>Tesla &middot; Full-time</b>
+                    <b>Feb 2017 - Jan 2020 &middot; 3 years</b>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odio dolores possimus maiores
+                         incidunt expedita ipsam magni quae sapiente ducimus?</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="images/spacex.webp" alt="">
+                <div>
+                    <h3>Graphics Designer</h3>
+                    <b>Space X &middot; Full-time</b>
+                    <b>Feb 2014 - Jan 2017 &middot; 3 years</b>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odio dolores possimus maiores
+                         incidunt expedita ipsam magni quae sapiente ducimus?</p>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="experience-link">Show all 6 experiences <img src="images/arrow-to-right-regular-24.png" alt=""></a>
+        </div>
+
+
+        <div class="profile-description">
+            <h2>Education</h2>
+            <div class="profile-desc-row">
+                <img src="images/Harvard-Logo-Meaning-history.jpg" alt="" width="50px" height="50px">
+                <div>
+                    <h3>Harvard University</h3>
+                    <b>Software Programming</b>
+                    <b>2018 - 2022</b>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="images/yale.jfif" alt="" width="50px" height="50px">
+                <div>
+                    <h3>Yale University</h3>
+                    <b>Data Analysis</b>
+                    <b>2016 - 2018</b>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="images/Harvard-Logo-Meaning-history.jpg" alt="" width="50px" height="50px">
+                <div>
+                    <h3>Oxford University</h3>
+                    <b>Graphics Design</b>
+                    <b>2014 - 2016</b>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="profile-description">
+            <h2>Skills</h2>
+            <a href="#" class="skills-btn">Leadership</a>
+            <a href="#" class="skills-btn">Web Design</a>
+            <a href="#" class="skills-btn">Communication</a>
+            <a href="#" class="skills-btn">Development</a>
+            <a href="#" class="skills-btn">Analytics</a>
+            <a href="#" class="skills-btn">Backend</a>
+            <a href="#" class="skills-btn">Frontend</a>
+            <a href="#" class="skills-btn">Software</a>
+            <a href="#" class="skills-btn">Python</a>
+            <a href="#" class="skills-btn">Javascript</a>
+        </div>
+
+
+        <div class="profile-description">
+            <h2>Languages</h2>
+            <a href="#" class="language-btn">English</a>
+            <a href="#" class="language-btn">Spanish</a>
+            <a href="#" class="language-btn">German</a>
+           
+        </div>
+
+
+
+    </div>
+
+
+<!-----------PROFILE SIDEBAR---------------->
+    
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the principles of Web Development.</p>
+                <div>
+                    <img src="images/single.jfif" alt="">
+                    <img src="images/single1.jpg" alt="">
+                </div>
+                <b>Styles of App Dev</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/happiness-at-workplace-GettyImages-1129332568.webp">
+                    <div>
+                        <h2>Randy Orton</h2>
+                        <p>Chief Technology Officer at Vaultz</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/single.jfif">
+                    <div>
+                        <h2>Tom Samuel</h2>
+                        <p>Chief Executive Officer at Oreos</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+
+                <div class="sidebar-people-row">
+                    <img src="images/single1.jpg">
+                    <div>
+                        <h2>Barrack Show</h2>
+                        <p>Software Developer Baulxz</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/istockphoto-1249879223-612x612.jpg">
+                    <div>
+                        <h2>Peter Goodluck</h2>
+                        <p>Chief Brand Officer at Vaultz</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/teenager-and-family-shopping-for-new-car-90134733-5b79ff78c9e77c0025c5c6dc.jpg">
+                    <div>
+                        <h2>Kante Kane</h2>
+                        <p>Chief Technology Officer at Microsoft</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+  </div>
+
+
+<div class="profile-footer">
+    <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+
+
+        <div class="copyright-msg">
+            <img src="images/linkedin logo.webp" alt="">
+            <p>LinkedIn &#169; 2023. All rights reserved</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

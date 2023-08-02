@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!--BEGINNING OF NAVBAR-->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img  src="images/linkedin logo.webp" alt=""></a>
+
+            <div class="search-box">
+                <img src="images/search-alt-regular-24.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/home-solid-24 (1).png" alt=""><span>Home</span></a></li>
+                <li><a href="profile.html"><img src="images/network-chart-regular-24 (2).png" alt=""><span>My Network</span></a></li>
+                <li><a href="profile.html"><img src="images/briefcase-solid-24 (1).png" alt=""><span>Jobs</span></a></li>
+                <li><a href="profile.html"><img src="images/chat-solid-24 (2).png" alt=""><span>Messaging</span></a></li>
+                <li><a href="profile.html"><img src="images/bell-solid-24 (1).png" alt=""><span>Notifications</span></a></li>
+                
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/istockphoto-1180590214-612x612.jpg" alt="" class="nav-profile-img" onclick="toggleMenu()">
+            </div>  
+        </div>
+
+<!-------PROFILE DROP DOWN MENU------->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/single1.jpg" alt="">
+                    <div>
+                        <h3>Alton Obinna</h3>
+                        <a href="profile.html">View Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/transfer-alt-regular-24 (1).png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/cog-solid-24.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/support-regular-24.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/stack-overflow-logo-24.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/log-out-circle-regular-24.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!--BODY-->
+
+
+    <div class="container">
+
+<!--LEFT SIDEBAR-->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/single1.jpg" alt="" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/single.jfif" alt="">
+                    <h1>Alton Obinna</h1>
+                    <h3>Web Developer</h3>
+                    <ul>
+                       <li>Your profile views <span>52</span></li> 
+                       <li>Your post views <span>71</span></li>
+                       <li>Your connections <span>132</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/bookmark-solid-24.png" alt="">My items</a>
+                    <a href="#"><img src="images/star-solid-24 (2).png" alt="">Try Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sideActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">Web Development</a>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">Online Learning</a>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">Graphics Design</a>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">Data Analytics</a>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">User Interface</a>
+                <a href="#"><img src="images/hourglass-top-solid-24 (1).png" alt="">Game Development</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group-solid-24 (1).png" alt="">Web Design Group</a>
+                <a href="#"><img src="images/group-solid-24 (1).png" alt="">HTML & CSS Learners</a>
+                <a href="#"><img src="images/group-solid-24 (1).png" alt="">Blockchain Devs</a>
+                <a href="#"><img src="images/group-solid-24 (1).png" alt="">Fintechies</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hash-regular-24 (1).png" alt="">Javascript</a>
+                <a href="#"><img src="images/hash-regular-24 (1).png" alt="">React</a>
+                <a href="#"><img src="images/hash-regular-24 (1).png" alt="">Python</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity();">Show more <b>+</b></p>
+        </div>
+
+
+
+
+
+<!--MAIN CONTENT-->
+        <div class="main-content">
+
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/istockphoto-1180590214-612x612.jpg" alt="">
+                    <textarea rows="2" placeholder="Write A Post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><img src="images/photo-album-solid-24 (1).png" alt="">Photo</li>
+                    <li><img src="images/video-plus-solid-24.png" alt="">Video</li>
+                    <li><img src="images/calendar-event-solid-24 (1).png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/chevrons-down-solid-24 (1).png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/single1.jpg">
+                    <div>
+                        <h1>John Jack</h1>
+                        <small>Investor at Software Firm.</small>
+                        <small>2hours ago</small>
+                    </div>
+                </div>
+                <p>Creating top notch software Lorem ipsum dolor sit amet consectetur adipisicm quisquam
+                     dicta tempore adipisciconsequuntur id dolor? Consectetur placeat accusamus sit odit neque sunt 
+                     unde doloremque, earum amet libero laborum.</p>
+                     <img src="images/single1.jpg" alt="" width="100%">
+                
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like-solid-24 (1).png">
+                        <img src="images/heart-solid-24 (1).png">
+                        <span class="liked-users">Donald Alton and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/single1.jpg" class="post-activity-user-icon">
+                        <img src="images/chevrons-down-solid-24 (1).png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like-solid-24 (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment-dots-regular-24 (1).png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share-alt-solid-24 (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send-solid-24.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/single.jfif">
+                    <div>
+                        <h1>Joseph John</h1>
+                        <small>Full-Stack Software Developer</small>
+                        <small>4hours ago</small>
+                    </div>
+                </div>
+                <p>Creating top notch software Lorem ipsum dolor sit amet consectetur adipisicm quisquam
+                     dicta tempore adipisciconsequuntur id dolor? Consectetur placeat accusamus sit odit neque sunt 
+                     unde doloremque, earum amet libero laborum.</p>
+                     <img src="images/teenager-and-family-shopping-for-new-car-90134733-5b79ff78c9e77c0025c5c6dc.jpg" alt="" width="100%">
+                
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like-solid-24 (1).png">
+                        <img src="images/heart-solid-24 (1).png">
+                        <span class="liked-users">Donald Alton and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/single1.jpg" class="post-activity-user-icon">
+                        <img src="images/chevrons-down-solid-24 (1).png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like-solid-24 (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment-dots-regular-24 (1).png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share-alt-solid-24 (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send-solid-24.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/teenager-and-family-shopping-for-new-car-90134733-5b79ff78c9e77c0025c5c6dc.jpg">
+                    <div>
+                        <h1>John Jack</h1>
+                        <small>Investor at Software Firm.</small>
+                        <small>2hours ago</small>
+                    </div>
+                </div>
+                <p>Creating top notch software Lorem ipsum dolor sit amet consectetur adipisicm quisquam
+                     dicta tempore adipisciconsequuntur id dolor? Consectetur placeat accusamus sit odit neque sunt 
+                     unde doloremque, earum amet libero laborum.</p>
+                     <img src="images/istockphoto-1249879223-612x612.jpg" alt="" width="100%">
+                
+                <div class="post-stats">
+                    <div>
+                        <img src="images/like-solid-24 (1).png">
+                        <img src="images/heart-solid-24 (1).png">
+                        <span class="liked-users">Donald Alton and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/single1.jpg" class="post-activity-user-icon">
+                        <img src="images/chevrons-down-solid-24 (1).png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like-solid-24 (1).png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment-dots-regular-24 (1).png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share-alt-solid-24 (1).png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send-solid-24.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--RIGHT SIDEBAR-->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/trending-up-regular-24.png" alt="" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,400 readers</span>
+
+                <a href="#">Maximizing the potential of renewables.</a>
+                <span>3d ago &middot; 31,400 readers</span>
+
+
+                <a href="#">Software is taking over!</a>
+                <span>5d ago &middot; 13,900 readers</span>
+
+                <a href="#">Tesla is still the best EV out there</a>
+                <span>1wk ago &middot; 110,400 readers</span>
+
+                <a href="#">Expert path to Javascript.</a>
+                <span>2wk ago &middot; 30,400 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the principles of Web Development.</p>
+                <div>
+                    <img src="images/single.jfif" alt="">
+                    <img src="images/single1.jpg" alt="">
+                </div>
+                <b>Styles of App Dev</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+
+                <div class="copyright-msg">
+                    <img src="images/linkedin logo.webp" alt="">
+                    <p>LinkedIn &#169; 2023. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!---------TO SHOW AND HIDE USER MENU PROFILE DROP DOWN------------>
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+
+
+
+<!---------TO SHOW AND HIDE RECENT ACTIVITY POSTS------------>
+
+<script>
+    let sideActvity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+        if(sideActivity.classList.contains("open-activity")) {
+            moreLink.innerHTML = "Show less <b>-</b>";
+        } else {
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+</script>
+
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
