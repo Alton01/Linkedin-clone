@@ -156,6 +156,10 @@ a{
     top: 73px;
 }
 
+#showMoreLink{
+    color: #045be6;
+}
+
 .sidebar-profile-box{
     background: #fff;
 }
